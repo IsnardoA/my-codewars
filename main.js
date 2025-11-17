@@ -7,7 +7,7 @@
 //   //You got this!
 //   return str.substring(1, str.length - 1);
 // };
-// removeChar('eloquent')
+// console.log(removeChar('eloquent'))
 
 // Rules of the "Rock, Paper, Scissors" game are:
 // Rock beats Scissors
@@ -47,21 +47,42 @@
 // The function should take three arguments - operation(string / char), value1(number), value2(number).
 // The function should return result of numbers after applying the chosen operation.
 
-function basicOp(operation, value1, value2) {
-  switch (operation) {
-    case '+':
-      return value1 + value2;
-    case '-':
-      return value1 - value2;
-    case '*':
-      return value1 * value2;
-    case '/':
-      return value1 / value2;
-    default:
-      return 0;
-  }
-}
+// function basicOp(operation, value1, value2) {
+//   switch (operation) {
+//     case '+':
+//       return value1 + value2;
+//     case '-':
+//       return value1 - value2;
+//     case '*':
+//       return value1 * value2;
+//     case '/':
+//       return value1 / value2;
+//     default:
+//       return 0;
+//   }
+// }
+// console.log(basicOp('*',20,10))
 
 // function basicOp(o, a, b) {
 //   return eval(a + o + b);
 // }
+
+
+// Write a function that accepts a non-negative integer n and a string s as parameters, and returns a string of s repeated exactly n times.
+// function repeatStr(n, s) {
+//   let starterString = '';
+
+//   for (let i = 0; i < n; i++) {
+//     starterString += s
+//   }
+//   return starterString;
+// }
+// repeatStr = (n, s) => s.repeat(n)
+
+// console.log(repeatStr(5, 'Hi '))
+
+// Write a function to split a string and convert it into an array of words.
+function stringToArray(string) {
+  return string.split(" ")
+}
+console.log(stringToArray("Happy Birthday"))
