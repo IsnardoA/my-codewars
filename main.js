@@ -82,7 +82,13 @@
 // console.log(repeatStr(5, 'Hi '))
 
 // Write a function to split a string and convert it into an array of words.
-function stringToArray(string) {
-  return string.split(" ")
+// function stringToArray(string) {
+//   return string.split(" ")
+// }
+// console.log(stringToArray("Happy Birthday"))
+
+// Given an array of integers, return a new array with each value doubled.
+function maps(x) {
+  return x.map((num) => num * 2)
 }
-console.log(stringToArray("Happy Birthday"))
+console.log(maps([2,4,6]))
