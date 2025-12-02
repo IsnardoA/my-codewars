@@ -3,11 +3,10 @@
 // Your goal is to write a function that removes the first and last characters of a string.You're given one parameter, the original string.
 // Important: Your function should handle strings of any length ≥ 2 characters.For strings with exactly 2 characters, return an empty string.
 
-// function removeChar(str) {
-//   //You got this!
-//   return str.substring(1, str.length - 1);
-// };
-// console.log(removeChar('eloquent'))
+// function removeChar(str){
+//   return str.substring(1, str.length - 1)
+// }
+// console.log(removeChar('IisnardoO'))
 
 // Rules of the "Rock, Paper, Scissors" game are:
 // Rock beats Scissors
@@ -88,7 +87,26 @@
 // console.log(stringToArray("Happy Birthday"))
 
 // Given an array of integers, return a new array with each value doubled.
-function maps(x) {
-  return x.map((num) => num * 2)
+// function maps(x) {
+//   return x.map((num) => num * 2)
+// }
+// console.log(maps([2,4,6]))
+
+// A hero is on his way to the castle to complete his mission.However, he's been told that the castle is surrounded with a couple of powerful dragons! each dragon takes 2 bullets to be defeated, our hero has no idea how many bullets he should carry.. Assuming he's gonna grab a specific given number of bullets and move forward to fight another specific given number of dragons, will he survive ?
+// Return true if yes, false otherwise:)
+// function hero(bullets, dragons) {
+//   //Get Coding!
+//   return bullets / dragons >= 2;
+// }
+
+// I'm new to coding and now I want to get the sum of two arrays... Actually the sum of all their elements. I'll appreciate for your help.
+// P.S.Each array includes only integer numbers.Output is a number too.
+// function arrayPlusArray(arr1, arr2){
+//   return arr1.concat(arr2).reduce((acc, cur) => acc + cur);
+// }
+// console.log(arrayPlusArray([9,8,7], [6,5,4]))
+function arrayPlusArray(arr1, arr2){
+  let arr = [...arr1, ...arr2];
+  return arr.reduce((a, b) => a + b)
 }
-console.log(maps([2,4,6]))
+console.log(arrayPlusArray([20, 21], [22, 23]))
