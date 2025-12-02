@@ -77,7 +77,6 @@
 //   return starterString;
 // }
 // repeatStr = (n, s) => s.repeat(n)
-
 // console.log(repeatStr(5, 'Hi '))
 
 // Write a function to split a string and convert it into an array of words.
@@ -105,8 +104,18 @@
 //   return arr1.concat(arr2).reduce((acc, cur) => acc + cur);
 // }
 // console.log(arrayPlusArray([9,8,7], [6,5,4]))
-function arrayPlusArray(arr1, arr2){
-  let arr = [...arr1, ...arr2];
-  return arr.reduce((a, b) => a + b)
-}
-console.log(arrayPlusArray([20, 21], [22, 23]))
+// function arrayPlusArray(arr1, arr2){
+//   let arr = [...arr1, ...arr2];
+//   return arr.reduce((a, b) => a + b)
+// }
+// console.log(arrayPlusArray([20, 21], [22, 23]))
+
+
+// The first century spans from the year 1 up to and including the year 100, the second century - from the year 101 up to and including the year 200, etc.
+// Task
+// Given a year, return the century it is in.
+// function century(year){
+// return Math.ceil( year / 100)
+// }
+// const century = year => Math.ceil(year / 100)
+// console.log(century(2300))
