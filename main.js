@@ -1,4 +1,4 @@
-// Remove First and Last Character
+// 1 Remove First and Last Character
 // Task
 // Your goal is to write a function that removes the first and last characters of a string.You're given one parameter, the original string.
 // Important: Your function should handle strings of any length ≥ 2 characters.For strings with exactly 2 characters, return an empty string.
@@ -8,7 +8,7 @@
 // }
 // console.log(removeChar("apples"));
 
-// Rules of the "Rock, Paper, Scissors" game are:
+//2 Rules of the "Rock, Paper, Scissors" game are:
 // Rock beats Scissors
 // Scissors beat Paper,
 // Paper beats Rock.
@@ -28,7 +28,7 @@
 // };
 // console.log(rps("scissors", "rock"));
 
-// Task
+//3 Task
 // You get an array of numbers, return the sum of all of the positives ones.
 // function positiveSum(arr) {
 //     let sum = 0;
@@ -45,7 +45,7 @@
 // }
 // console.log(positiveSum([1, 2, 3, 4, 5]))
 
-// Your task is to create a function that does four basic mathematical operations.
+//4 Your task is to create a function that does four basic mathematical operations.
 // The function should take three arguments - operation(string / char), value1(number), value2(number).
 // The function should return result of numbers after applying the chosen operation.
 
@@ -65,7 +65,7 @@
 // }
 // console.log(basicOp("*", 20, 10));
 
-// Write a function that accepts a non-negative integer n and a string s as parameters, and returns a string of s repeated exactly n times.
+//5 Write a function that accepts a non-negative integer n and a string s as parameters, and returns a string of s repeated exactly n times.
 
 // function repeatStr(n, s) {
 //   let starterString = '';
@@ -79,14 +79,29 @@
 // repeatStr = (n, s) => s.repeat(n)
 // console.log(repeatStr(5, 'Hi '))
 
-// Write a function to split a string and convert it into an array of words.
+//6 Write a function to split a string and convert it into an array of words.
 // function stringToArray(string) {
 //     return string.split(" ");
 // }
 // console.log(stringToArray("Happy Birthday"));
 
-// Given an array of integers, return a new array with each value doubled.
+//7 Given an array of integers, return a new array with each value doubled.
 // function maps(x) {
 //     return x.map((num) => num * 2);
 // }
 // console.log(maps([2, 4, 6]));
+
+//8 A hero is on his way to the castle to complete his mission. However, he's been told that the castle is surrounded with a couple of powerful dragons! each dragon takes 2 bullets to be defeated, our hero has no idea how many bullets he should carry.. Assuming he's gonna grab a specific given number of bullets and move forward to fight another specific given number of dragons, will he survive?
+// Return true if yes, false otherwise :)
+// function hero(bullets, dragons) {
+//     return bullets >= dragons * 2;
+// }
+// console.log(hero(6, 2));
+
+//9
+// I'm new to coding and now I want to get the sum of two arrays... Actually the sum of all their elements. I'll appreciate for your help.
+// P.S. Each array includes only integer numbers. Output is a number too.
+function arrayPlusArray(arr1, arr2) {
+    return arr1.concat(arr2).reduce((acc, cur) => acc + cur);
+}
+console.log(arrayPlusArray([2, 3, 4, 5], [3, 4, 6, 7]));
