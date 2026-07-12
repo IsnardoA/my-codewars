@@ -81,13 +81,13 @@
 
 //6 Write a function to split a string and convert it into an array of words.
 // function stringToArray(string) {
-//     return string.split(" ");
+// 	return string.split(" ");
 // }
-// console.log(stringToArray("Happy Birthday"));
+// console.log(stringToArray("Happy Birthday To You"));
 
 //7 Given an array of integers, return a new array with each value doubled.
 // function maps(x) {
-//     return x.map((num) => num * 2);
+// 	return x.map((num) => num * 2);
 // }
 // console.log(maps([2, 4, 6]));
 
@@ -101,7 +101,12 @@
 //9
 // I'm new to coding and now I want to get the sum of two arrays... Actually the sum of all their elements. I'll appreciate for your help.
 // P.S. Each array includes only integer numbers. Output is a number too.
+
+// function arrayPlusArray(arr1, arr2) {
+// 	return arr1.concat(arr2).reduce((acc, cur) => acc + cur);
+// }
+// console.log(arrayPlusArray([2, 3, 4, 5], [9, 8, 7, 6]));
 function arrayPlusArray(arr1, arr2) {
-    return arr1.concat(arr2).reduce((acc, cur) => acc + cur);
+	return arr1.concat(arr2).reduce((acc, cur) => acc + cur);
 }
-console.log(arrayPlusArray([2, 3, 4, 5], [3, 4, 6, 7]));
+console.log(arrayPlusArray([9, 8, 7, 6], [20, 10, 30]));
