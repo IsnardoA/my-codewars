@@ -106,7 +106,41 @@
 // 	return arr1.concat(arr2).reduce((acc, cur) => acc + cur);
 // }
 // console.log(arrayPlusArray([2, 3, 4, 5], [9, 8, 7, 6]));
-function arrayPlusArray(arr1, arr2) {
-	return arr1.concat(arr2).reduce((acc, cur) => acc + cur);
-}
-console.log(arrayPlusArray([9, 8, 7, 6], [20, 10, 30]));
+// function arrayPlusArray(arr1, arr2) {
+// 	return arr1.concat(arr2).reduce((acc, cur) => acc + cur);
+// }
+// console.log(arrayPlusArray([9, 8, 7, 6], [20, 10, 30]));
+
+//10
+// Introduction
+// The first century spans from the year 1 up to and including the year 100, the second century - from the year 101 up to and including the year 200, etc.
+// Task
+// Given a year, return the century it is in.
+// function century(year) {
+// 	return Math.ceil(year / 100);
+// }
+// console.log(century(1993));
+
+// Kata Task
+// I have a cat and a dog.
+// I got them at the same time as kitten/puppy. That was humanYears years ago.
+// Return their respective ages now as [humanYears,catYears,dogYears]
+// const humanYearsCatYearsDogYears = (humanYears) => {
+// 	let catYears = 0;
+// 	let dogYears = 0;
+
+// 	for (let i = 1; i <= humanYears; i++) {
+// 		if (i === 1) {
+// 			catYears += 15;
+// 			dogYears += 15;
+// 		} else if (i === 2) {
+// 			catYears += 9;
+// 			dogYears += 9;
+// 		} else {
+// 			catYears += 4;
+// 			dogYears += 5;
+// 		}
+// 	}
+// 	return `Human Years = ${humanYears}, Cat Years = ${catYears}, Dog Years = ${dogYears}`;
+// };
+// console.log(humanYearsCatYearsDogYears(12));
