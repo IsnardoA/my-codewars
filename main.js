@@ -119,7 +119,7 @@
 // function century(year) {
 // 	return Math.ceil(year / 100);
 // }
-// console.log(century(1993));
+// console.log(century(1989));
 
 // Kata Task
 // I have a cat and a dog.
@@ -143,4 +143,39 @@
 // 	}
 // 	return `Human Years = ${humanYears}, Cat Years = ${catYears}, Dog Years = ${dogYears}`;
 // };
+
+// const humanYearsCatYearsDogYears = function (y) {
+// 	if (y == 1) return [1, 15, 15];
+// 	if (y == 2) return [2, 24, 24];
+// 	return [y, (y - 2) * 4 + 24, (y - 2) * 5 + 24];
+// };
 // console.log(humanYearsCatYearsDogYears(12));
+
+// Total amount of points
+// Our football team has finished the championship.
+// Our team's match results are recorded in a collection of strings. Each match is represented by a string in the format "x:y", where x is our team's score and y is our opponents score.
+
+// const points = (games) =>
+// 	games.reduce((output, current) => {
+// 		return (output += current[0] > current[2] ? 3 : current[0] === current[2] ? 1 : 0);
+// 	}, 0);
+// function points(games) {
+// 	return games.reduce((output, current) => {
+// 		let x = parseInt(current[0]);
+// 		let y = parseInt(current[2]);
+// 		let value = x > y ? 3 : x === y ? 1 : 0;
+// 		return output + value;
+// 	}, 0);
+// }
+// function points(games) {
+// 	let total = 0;
+// 	games.map((game) => {
+// 		if (game[0] === game[2]) {
+// 			total += 1;
+// 		} else if (game[0] > game[2]) {
+// 			total += 3;
+// 		}
+// 	});
+// 	return total;
+// }
+// console.log(points(["1:1", "2:2", "3:3", "4:4", "2:2", "3:3", "4:4", "3:3", "4:4", "4:4"]));
