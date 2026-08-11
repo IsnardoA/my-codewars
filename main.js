@@ -125,6 +125,7 @@
 // I have a cat and a dog.
 // I got them at the same time as kitten/puppy. That was humanYears years ago.
 // Return their respective ages now as [humanYears,catYears,dogYears]
+
 // const humanYearsCatYearsDogYears = (humanYears) => {
 // 	let catYears = 0;
 // 	let dogYears = 0;
@@ -167,6 +168,7 @@
 // 		return output + value;
 // 	}, 0);
 // }
+
 // function points(games) {
 // 	let total = 0;
 // 	games.map((game) => {
@@ -179,3 +181,49 @@
 // 	return total;
 // }
 // console.log(points(["1:1", "2:2", "3:3", "4:4", "2:2", "3:3", "4:4", "3:3", "4:4", "4:4"]));
+
+// Break camelCase
+// Complete the solution so that the function will break up camel casing, using a space between words.
+// Example
+// "camelCasing"  =>  "camel Casing"
+// "identifier"   =>  "identifier"
+// ""             =>  ""
+// function solution(string) {
+// 	string = string.split("").map(function (element) {
+// 		if (element === element.toUpperCase()) {
+// 			element = " " + element;
+// 		}
+// 		return element;
+// 	});
+// 	return string.join("").trimStart();
+// }
+
+// function solution(string) {
+// 	return string.replace(/([A-Z])/g, " $1").trimStart();
+// }
+// console.log(solution("HappyBirthdayToYou"));
+
+// List Filtering
+// Description:
+// In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
+// Example
+// filter_list([1,2,'a','b']) == [1,2]
+// filter_list([1,'a','b',0,15]) == [1,0,15]
+// filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
+
+// function filter_list(l) {
+// 	let res = [];
+// 	for (let item = 0; item < l.length; item++) {
+// 		if (typeof l[item] === "number") {
+// 			res.push(l[item]);
+// 		}
+// 	}
+// 	return res;
+// }
+
+// function filter_list(l) {
+// 	return l.filter(function (v) {
+// 		return typeof v == "number";
+// 	});
+// }
+// console.log(filter_list([1, 2, "a", "b"]));
