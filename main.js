@@ -220,6 +220,7 @@
 // 	}
 // 	return res;
 // }
+// console.log(filter_list([1, 2, "a", "b"]));
 
 // function filter_list(l) {
 // 	return l.filter(function (v) {
@@ -237,16 +238,58 @@
 // function arrayDiff(a, b) {
 // 	return a.filter((x) => !b.includes(x));
 // }
-function arrayDiff(a, b) {
-	if (b.length == 0 || a.length == 0) return a;
-	for (let i = 0; i < a.length; i++) {
-		for (let j = 0; j < b.length; j++) {
-			if (a[i] == b[j]) {
-				a.splice(i, 1);
-				i--;
-			}
-		}
-	}
-	return a;
-}
-console.log(arrayDiff([1, 2], [1]));
+
+// function arrayDiff(a, b) {
+// 	if (b.length == 0 || a.length == 0) return a;
+// 	for (let i = 0; i < a.length; i++) {
+// 		for (let j = 0; j < b.length; j++) {
+// 			if (a[i] == b[j]) {
+// 				a.splice(i, 1);
+// 				i--;
+// 			}
+// 		}
+// 	}
+// 	return a;
+// }
+// console.log(arrayDiff([1, 2], [1]));
+
+// Take a ten minute walk
+// Description:
+// You live in the city of Cartesia where all roads are laid out in a perfect grid. You arrived ten minutes too early to an appointment, so you decided to take the opportunity to go for a short walk. The city provides its citizens with a Walk Generating App on their phones -- everytime you press the button it sends you an array of one-letter strings representing directions to walk (eg. ['n', 's', 'w', 'e']). You always walk only a single block for each letter (direction) and you know it takes you one minute to traverse one city block, so create a function that will return true if the walk the app gives you will take you exactly ten minutes (you don't want to be early or late!) and will, of course, return you to your starting point. Return false otherwise.
+
+// Note: you will always receive a valid array containing a random assortment of direction letters ('n', 's', 'e', or 'w' only). It will never give you an empty array (that's not a walk, that's standing still!).
+
+// function isValidWalk(walk) {
+// 	var dx = 0;
+// 	var dy = 0;
+// 	var dt = walk.length;
+
+// 	for (var i = 0; i < walk.length; i++) {
+// 		switch (walk[i]) {
+// 			case "n":
+// 				dy--;
+// 				break;
+// 			case "s":
+// 				dy++;
+// 				break;
+// 			case "w":
+// 				dx--;
+// 				break;
+// 			case "e":
+// 				dx++;
+// 				break;
+// 		}
+// 	}
+
+// 	return dt === 10 && dx === 0 && dy === 0;
+// }
+
+// function isValidWalk(walk) {
+// 	function count(val) {
+// 		return walk.filter(function (a) {
+// 			return a == val;
+// 		}).length;
+// 	}
+// 	return walk.length == 10 && count("n") == count("s") && count("w") == count("e");
+// }
+// console.log(isValidWalk(["n", "s", "n", "s", "n", "s", "n", "s", "n", "s"]));
