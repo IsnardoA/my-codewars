@@ -14,19 +14,19 @@
 // Paper beats Rock.
 // Let's play! You have to return which player won! In case of a draw return Draw!.
 // const rps = (p1, p2) => {
-//     if (p1 === p2) return "Draw";
-//     let rules = {
-//         rock: "scissors",
-//         paper: "rock",
-//         scissors: "paper"
-//     };
-//     if (p2 === rules[p1]) {
-//         return "Plaayer 1 Won!";
-//     } else {
-//         return "Player 2 Won!";
-//     }
+// 	if (p1 == p2) return 'Draw';
+// 	let rules = {
+// 		rock: 'scissors',
+// 		paper: 'rock',
+// 		scissors: 'paper',
+// 	};
+// 	if (p2 == rules[p1]) {
+// 		return 'Player 1 Won!';
+// 	} else {
+// 		return 'Player 2 Won!';
+// 	}
 // };
-// console.log(rps("scissors", "rock"));
+// console.log(rps('rock', 'rock'));
 
 //3 Task
 // You get an array of numbers, return the sum of all of the positives ones.
@@ -292,6 +292,7 @@
 // 	}
 // 	return walk.length == 10 && count("n") == count("s") && count("w") == count("e");
 // }
+// console.log(isValidWalk(["n", "s", "n", "s", "n", "s", "n", "s", "n", "s"]));
 
 // Validate a PIN code
 // ATM machines allow 4 or 6 digit PIN codes and PIN codes cannot contain anything but exactly 4 digits or exactly 6 digits.
@@ -303,3 +304,12 @@
 // 	return /^(\d{4}|d{6})$/.test(pin);
 // }
 // console.log(validatePIN("0987"));
+
+// Count lowercase letters in a string
+// Your task is simply to count the total number of lowercase letters in a string.
+// "abcABC123" ===> 3
+
+function lowercaseCount(str) {
+	return (str.match(/[a-z]/g) || []).length
+}
+console.log(lowercaseCount("abcABC123!@€£#$%^&*()_-+=}{[]|\':;?/>.<,~"))
