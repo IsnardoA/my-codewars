@@ -39,11 +39,15 @@
 //     }
 //     return sum;
 // }
+// console.log(positiveSum([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
 
 // function positiveSum(arr) {
 //   return arr.reduce((a, b) => a + (b > 0 ? b : 0), 0)
 // }
-// console.log(positiveSum([1, 2, 3, 4, 5]))
+// function positiveSum(arr) {
+// 	return arr.reduce((a, b) => a + (b > 0 ? b : 0), 0)
+// }
+// console.log(positiveSum([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
 
 //4 Your task is to create a function that does four basic mathematical operations.
 // The function should take three arguments - operation(string / char), value1(number), value2(number).
@@ -309,7 +313,35 @@
 // Your task is simply to count the total number of lowercase letters in a string.
 // "abcABC123" ===> 3
 
-function lowercaseCount(str) {
-	return (str.match(/[a-z]/g) || []).length
-}
-console.log(lowercaseCount("abcABC123!@€£#$%^&*()_-+=}{[]|\':;?/>.<,~"))
+// function lowercaseCount(str) {
+// 	return (str.match(/[a-z]/g) || []).length
+// }
+// console.log(lowercaseCount("abcABC123!@€£#$%^&*()_-+=}{[]|\':;?/>.<,~"))
+
+// Alternate capitalization
+// Given a string, capitalize the letters that occupy even indexes and odd indexes separately, and return as shown below. Index 0 will be considered even.
+// For example, capitalize("abcdef") = ['AbCdEf', 'aBcDeF']. See test cases for more examples.
+// The input will be a lowercase string with no spaces.
+
+// function capitalize(s) {
+// 	const odd = s
+// 		.split('')
+// 		.map((l, i) => (i % 2 !== 0 ? l.toUpperCase() : l))
+// 		.join('')
+// 	const even = s
+// 		.split('')
+// 		.map((l, i) => (i % 2 === 0 ? l.toUpperCase() : l))
+// 		.join('')
+// 	return [even, odd]
+// }
+// console.log(capitalize('codewarriors'))
+
+// The Hashtag Generator
+// function generateHashTag(str) {
+// 	let hashtag = str.split(' ').reduce(function (tag, word) {
+// 		return tag + word.charAt(0).toUpperCase() + word.substring(1)
+// 	}, '#')
+
+// 	return hashtag.length == 1 || hashtag.length > 140 ? false : hashtag
+// }
+// console.log(generateHashTag('codewars is good for you'))
