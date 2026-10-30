@@ -319,8 +319,7 @@
 // console.log(lowercaseCount("abcABC123!@€£#$%^&*()_-+=}{[]|\':;?/>.<,~"))
 
 // Alternate capitalization
-// Given a string, capitalize the letters that occupy even indexes and odd indexes separately, and return as shown below. Index 0 will be considered even.
-// For example, capitalize("abcdef") = ['AbCdEf', 'aBcDeF']. See test cases for more examples.
+// capitalize("abcdef") = ['AbCdEf', 'aBcDeF']. See test cases for more examples.
 // The input will be a lowercase string with no spaces.
 
 // function capitalize(s) {
@@ -341,7 +340,6 @@
 // 	let hashtag = str.split(' ').reduce(function (tag, word) {
 // 		return tag + word.charAt(0).toUpperCase() + word.substring(1)
 // 	}, '#')
-
 // 	return hashtag.length == 1 || hashtag.length > 140 ? false : hashtag
 // }
 // console.log(generateHashTag('codewars is good for you'))
