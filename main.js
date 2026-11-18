@@ -343,3 +343,39 @@
 // 	return hashtag.length == 1 || hashtag.length > 140 ? false : hashtag
 // }
 // console.log(generateHashTag('codewars is good for you'))
+
+// Lazy Repeater
+// function makeLooper(str) {
+// 	const i = 0,
+// 		l = str.length
+// 	return function () {
+// 		return str[i++ % l]
+// 	}
+// }
+// function makeLooper(str) {
+// 	// TODO: return a function that loops through 'str' on successive invocations
+// 	let i = 0,
+// 		l = str.length
+// 	return function () {
+// 		return str[i++ % l]
+// 	}
+// }
+// const loop = makeLooper('hello')
+// console.log(loop())
+// console.log(loop())
+// console.log(loop())
+// console.log(loop())
+// console.log(loop())
+// makeLooper = (s,i=0) => () => s[i++ % s.length]
+
+// 7kyu - Given a string, you need to write a method that order every letter in this string in ascending order.
+// Also, you should validate that the given string is not empty or null. If so, the method should return:
+// "Invalid String!"
+// const orderWord = (s) => (s ? [...s].sort().join('') : 'Invalid String!')
+// function orderWord(s) {
+// 	if (!s) {
+// 		return 'Invalid String'
+// 	}
+// 	return s.split('').sort().join('')
+// }
+// console.log(orderWord('Isnardo'))
